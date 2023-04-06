@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+    <link rel="shortcut icon" href="https://img.freepik.com/free-vector/www-icon_23-2147934051.jpg?w=740&t=st=1676834757~exp=1676835357~hmac=5eed4b25ed407f253a1c1d71f9e2ed94872a7ae63d518bee13a6077777db8d74">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="/PS28645_BUIVANTHANHVINH_ASM2_JS/css/showcart.css">
+
+</head>
+
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo-header">
+                <img src="../img/Artboard 2-100.jpg" alt="logo">
+            </div>
+            <div class="menu-header">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="#">Resources</a></li>
+                    <li><a href="./product.html">Products</a></li>
+                    <li><a href="./mydomain.html">My Domain</a></li>
+                </ul>
+            </div>
+            <div class="sign-up">
+                <a href="./login.html"><input class="login" type="button" value="Sign up"></a>
+
+            </div>
+
+        </div>
+        <div class="show-cart">
+            <div class="left-cart">
+                <h3>Delivery Information</h3>
+                <div class="top-left-cart">
+                    <div class="row">
+                        <div class="name">
+                            <div class="title">
+                                Name
+                            </div>
+                            <div class="input-form">
+                                <input type="text" placeholder="Bui Van Thanh Vinh">
+                            </div>
+                        </div>
+
+                        <div class="number">
+                            <div class="title">
+                                Mobile Number
+                            </div>
+                            <div class="input-form">
+                                <input type="text" placeholder="03999999999">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="email">
+                            <div class="title">
+                                Email
+                            </div>
+                            <div class="input-form">
+                                <input type="text" placeholder="abc@gmail.com">
+                            </div>
+                        </div>
+
+                        <div class="city">
+                            <div class="title">
+                                City
+                            </div>
+                            <div class="input-form">
+                                <input type="text" placeholder="Hawthorne">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="state">
+                            <div class="title">
+                                State
+                            </div>
+                            <div class="input-form">
+                                <input type="text" placeholder="California">
+                            </div>
+                        </div>
+
+                        <div class="zip">
+                            <div class="zip-child">
+                                <div class="title">
+                                    ZIP
+                                </div>
+                                <div class="input-form">
+                                    <input type="text" placeholder="90250">
+                                </div>
+                            </div>
+
+                            <div class="state-child">
+                                <div class="title">
+                                    State
+                                </div>
+                                <div class="input-form">
+                                    <input type="text" placeholder="CA">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="address">
+                            <div class="title">
+                                Address
+                            </div>
+                            <div class="input-form">
+                                <input type="text" placeholder="620/35 Truong Chinh, Tan Hung Thuan, Quan 12, Ho Chi Minh">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h3>Schedule Delivery <i class="fa-solid fa-toggle-on"></i> </h3>
+                <div class="center-left">
+                    <div class="row">
+                        <div class="date">
+                            <div class="title">
+                                Date
+                            </div>
+                            <div class="input-form">
+                                <input type="date">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="note">
+                            <div class="title">
+                                Note
+                            </div>
+                            <div class="input-form">
+                                <input type="text" placeholder="Type your note">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h3>Payment Method</h3>
+                <div class="bottom-left">
+                    <div class="input-type"><input type="radio" onchange="clearCart()"> Online Payment</div>
+                    <div class="input-type"><input type="radio"> Cash on Delivery</div>
+                    <div class="input-type"><input type="radio"> POS on Delivery</div>
+                </div>
+            </div>
+
+            <div class="right-cart">
+                <h3>Oder Summary</h3>
+                <div class="product-cart">
+
+                </div>
+                <div class="sub-right">
+                    <div class="sub-total">
+                        Subtotal
+                        <span style="font-weight: bold;">$0</span>
+                    </div>
+                    <div class="ship">
+                        Shipping
+                        <span style="font-weight: bold;">$ <span class="valueship">12</span></span>
+                    </div>
+                    <div class="total">
+                        Total(USD)
+                        <span style="font-weight: bold;">$0</span>
+                    </div>
+                    <div class="order">
+                        <button>Confirm Order</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <script src="/PS28645_BUIVANTHANHVINH_ASM2_JS/js/showcart.js">
+        </script>
+
+</body>
+
+</html>

@@ -1,0 +1,386 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    border: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500&family=Roboto:wght@400;500;700;900&display=swap');
+.sign-up button {
+    position: absolute;
+    left: 0;
+    top: 44px;
+    font-size: 32px;
+    background-color: #F8F6F5;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+body {
+    background-color: #F5F5F5;
+    background-size: 100%;
+}
+
+
+/* HEADER CSS */
+
+.header {
+    height: 120px;
+    display: flex;
+    position: relative;
+}
+
+.nav {
+    height: 700px;
+}
+
+.section-1 {
+    height: 300px;
+    margin-top: 40px;
+    margin-bottom: 80px;
+}
+
+.header .logo-header {
+    width: 25%;
+}
+
+.header .menu-header {
+    width: 55%;
+}
+
+.header .menu-header ul {
+    list-style: none;
+    display: flex;
+    transition: all 0.3 ease-in;
+}
+
+.header .menu-header ul a {
+    padding: 0 12px;
+    text-decoration: none;
+    line-height: 100px;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(65, 5, 60);
+    transition: 0.7s;
+}
+
+.header .menu-header ul a:hover {
+    border-bottom: 5px solid rgb(161, 127, 127);
+    font-size: 25px;
+    color: rgb(180, 13, 97);
+    transition: 0.7s;
+}
+
+.logo-header img {
+    margin-top: 20px;
+    width: 100px;
+    left: 0;
+    border-radius: 20px;
+}
+
+.header .sign-up {
+    width: 20%;
+    position: relative;
+}
+
+.header .sign-up input:hover {
+    transition: 0.8s;
+    background-color: wheat;
+    color: rgb(73, 7, 27);
+}
+
+.sign-up input {
+    padding: 12px 16px;
+    position: absolute;
+    right: 100px;
+    bottom: 30%;
+    color: aliceblue;
+    background-color: rgb(36, 28, 28);
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+
+/* END HEADER    */
+
+.footer {
+    height: 300px;
+    display: flex;
+    border: 10px 10px 10px;
+    max-width: 1200px;
+    margin: 30px auto 0 auto;
+}
+
+.footer ul li {
+    list-style: none;
+    padding: 4px 0;
+}
+
+.footer ul li a {
+    text-decoration: none;
+    color: rgba(27, 2, 15, 0.8);
+}
+
+.footer ul li a:hover {
+    color: rgb(133, 88, 88);
+    border-bottom: solid 2px black;
+}
+
+.footer .column-1,
+.footer .column-2,
+.footer .column-3,
+.footer .column-4,
+.footer .column-5 {
+    width: 18%;
+    padding-top: 4px;
+    padding-left: 120px;
+}
+
+.footer .title {
+    color: rgb(65, 60, 55);
+    padding-bottom: 8px;
+    font-weight: bold;
+}
+
+.footer .title p {
+    transition: all 0.3s linear;
+}
+
+.footer .title p:hover {
+    color: #371274;
+    border-left: solid 2px red;
+    padding-left: 2px;
+}
+
+.footer .app {
+    padding-left: 40px;
+    padding-top: 40px;
+}
+
+.footer .app .title-app {
+    font-weight: bold;
+}
+
+.footer .app img {
+    padding-top: 20px;
+    width: 140px;
+}
+
+.shop-cart {
+    display: flex;
+    margin: 0 auto;
+    max-width: 1200px;
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.left-cart {
+    width: 50%;
+    margin-top: 38px;
+}
+
+.right-cart {
+    width: 50%;
+}
+
+.left-cart .img-product img {
+    width: 500px;
+    border-radius: 10px;
+}
+
+.sub-img-product {
+    display: flex;
+}
+
+.sub-img-product .imgs {
+    padding: 0 2px;
+}
+
+.sub-img-product img {
+    width: 122px;
+}
+
+.right-cart .sub-product {}
+
+.right-cart .rate-product {
+    padding: 10px 0;
+}
+
+.right-cart .rate-product {}
+
+.right-cart .title-price {
+    padding-top: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    padding-bottom: 8px;
+}
+
+.right-cart .sub-price {
+    padding-bottom: 10px;
+}
+
+.quantity {
+    display: flex;
+}
+
+.buy-addcart {
+    display: flex;
+}
+
+.price {
+    width: 400px;
+    border-top: solid 1px rgb(161, 161, 161);
+}
+
+.choose-color {}
+
+.choose-color .title-color p {
+    font-weight: bold;
+}
+
+.choose-color .item-color {
+    margin-bottom: 8px
+}
+
+.choose-color .item-color i {
+    font-size: 40px;
+}
+
+.choose-color .item-color i :hover {
+    border: solid 2px blue;
+}
+
+.right-cart .quantity .quantity-1 {
+    display: flex;
+    align-items: center;
+    padding: 0 12px;
+    background-color: #bdb7c5;
+    border-radius: 20px;
+    cursor: pointer;
+    color: rgb(30, 53, 7);
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.right-cart .quantity .quantity-1 .quan {
+    padding: 0 4px;
+    cursor: pointer;
+}
+
+.right-cart .quantity .sub-quantity {
+    padding-left: 30px;
+}
+
+.buy-addcart {
+    margin-top: 10px;
+}
+
+.buy-addcart .buy {}
+
+.buy-addcart .buy button {
+    padding: 10px 40px;
+    border-radius: 20px;
+    border: solid 1px green;
+    transition: all 0.2s linear;
+}
+
+.buy-addcart .add-to-cart {
+    padding-left: 10px;
+}
+
+.buy-addcart .add-to-cart button {
+    padding: 10px 40px;
+    border-radius: 20px;
+    border: solid 1px green;
+    transition: all 0.2s linear;
+}
+
+.buy-addcart .buy button:hover,
+.buy-addcart .add-to-cart button:hover {
+    background-color: darkgreen;
+    color: aliceblue;
+}
+
+.shipping {
+    margin-top: 8px;
+    width: 350px;
+    box-shadow: 0 0 3px rgb(73, 69, 69);
+}
+
+.shipping .ship-1 {
+    padding: 10px;
+    border-bottom: solid 1px #28262b;
+}
+
+.name-ship {
+    font-weight: bold;
+    padding-bottom: 4px;
+}
+
+.sub-ship a {
+    color: #28262b;
+}
+
+.shipping .ship-2 {
+    padding: 10px;
+}
+
+.menu-top {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 90px;
+}
+
+.menu-top ul {
+    display: flex;
+}
+
+.menu-top ul li {
+    padding: 0 4px;
+    list-style: none;
+    color: #39373b;
+}
+
+.notification {
+    position: fixed;
+    top: 20%;
+    right: 10px;
+    display: none;
+    z-index: 9999;
+    padding: 16px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    background-color: #4CAF50;
+    border-left: 6px solid #388E3C;
+}
+
+.show {
+    display: block;
+    animation: slideInRight 0.3s, fadeOut 0.5s 2.5s forwards;
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}

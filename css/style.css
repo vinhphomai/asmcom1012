@@ -1,0 +1,534 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500&family=Roboto:wght@400;500;700;900&display=swap');
+body {
+    background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #0f8f44);
+    background-position: center center;
+    height: 700px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    height: 100px;
+    display: flex;
+    position: relative;
+}
+
+.nav {
+    height: 700px;
+}
+
+.section-1 {
+    height: 300px;
+    margin-top: 40px;
+    margin-bottom: 80px;
+}
+
+.header .logo-header {
+    width: 25%;
+}
+
+.header .menu-header {
+    width: 50%;
+}
+
+.header .menu-header ul {
+    list-style: none;
+    display: flex;
+    transition: all 0.3 ease-in;
+}
+
+.header .menu-header ul a {
+    padding: 0 12px;
+    text-decoration: none;
+    line-height: 100px;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(65, 5, 60);
+    transition: 0.7s;
+}
+
+.header .menu-header ul a:hover {
+    border-bottom: 5px solid rgb(161, 127, 127);
+    font-size: 25px;
+    color: rgb(180, 13, 97);
+    transition: 0.7s;
+}
+
+.logo-header img {
+    margin-top: 20px;
+    width: 100px;
+    left: 0;
+    border-radius: 20px;
+}
+
+.header .sign-up {
+    width: 25%;
+}
+
+.header .sign-up input:hover {
+    transition: 0.8s;
+    background-color: wheat;
+    color: rgb(73, 7, 27);
+}
+
+.sign-up input {
+    transition: all 0.3s ease-in;
+    padding: 12px 16px;
+    position: absolute;
+    right: 200px;
+    bottom: 30%;
+    color: aliceblue;
+    background-color: rgb(36, 28, 28);
+    border-radius: 10px;
+    font-weight: bold;
+    border: none;
+}
+
+.title-main {
+    margin-top: 10%;
+    font-size: 35px;
+    color: aliceblue;
+}
+
+.sub-main {
+    margin-top: 40px;
+}
+
+.bottom-getstarted {
+    display: flex;
+    margin-top: 60px;
+}
+
+.bottom-getstarted .botton-1 {
+    padding: 12px 25px;
+    border-radius: 15px;
+    background-color: rgb(78, 75, 75);
+    color: aliceblue;
+    font-weight: bold;
+    border: none;
+    transition: all 0.3s ease-in;
+}
+
+.bottom-getstarted .botton-1:hover {
+    background-color: bisque;
+    color: rgb(15, 59, 59);
+}
+
+.bottom-getstarted .botton-2 i {
+    padding: 12px 12px;
+    background-color: brown;
+    border-radius: 10px;
+    color: aliceblue;
+    font-size: 20px;
+    transition: all 0.3s ease-in;
+    margin-left: 20px;
+}
+
+.bottom-getstarted .botton-2 i:hover {
+    background-color: darkcyan;
+}
+
+.left-menu {
+    width: 50%;
+    float: left;
+}
+
+.left-menu .title-main h1 {
+    text-shadow: 3px 3px rgb(105, 60, 60);
+}
+
+.right-menu {
+    width: 50%;
+    float: left;
+    position: relative;
+}
+
+.box-1 {
+    top: 48px;
+    position: absolute;
+    width: 240px;
+    height: 200px;
+    background-color: rgb(208, 228, 228);
+    border-radius: 10px;
+    left: 40px;
+    position: relative;
+}
+
+.box-1 .title {
+    padding-top: 15px;
+    font-weight: bold;
+    padding-left: 15px;
+}
+
+.box-1 .sub-title {
+    padding: 10px 0;
+    padding-left: 15px;
+}
+
+.box-1 .calendar-1 {
+    font-size: 18px;
+    background-color: rgb(255, 255, 255);
+    width: 62px;
+    height: 78px;
+    border-radius: 10px;
+    color: black;
+    text-align: center;
+    padding-top: 4px;
+    position: absolute;
+    left: 50px;
+    bottom: 20px;
+}
+
+.box-1 .calendar-1 img {
+    border-radius: 7px;
+    width: 24px;
+}
+
+.box-1 .calendar-1 i {
+    color: brown;
+}
+
+.box-1 .calendar-2 {
+    font-size: 18px;
+    background-color: rgb(167, 209, 228);
+    width: 62px;
+    height: 78px;
+    border-radius: 10px;
+    color: black;
+    text-align: center;
+    padding-top: 4px;
+    position: absolute;
+    right: 30px;
+    bottom: 50px;
+}
+
+.box-1 .calendar-2 img {
+    border-radius: 7px;
+    width: 24px;
+}
+
+.box-1 .calendar-2 i {
+    color: brown;
+}
+
+.box-2 {
+    border-radius: 15px;
+    position: relative;
+    width: 200px;
+    height: 190px;
+    background-color: rgb(226, 235, 232);
+    position: absolute;
+    right: 68px;
+}
+
+.box-2 .title {
+    font-size: 20px;
+    top: 4px;
+    left: 20px;
+    position: absolute;
+    margin-top: 20px;
+}
+
+.box-2 img {
+    position: absolute;
+    bottom: 80px;
+    right: 30px;
+    width: 80px;
+}
+
+.box-2 .icon {
+    position: absolute;
+    left: 18px;
+    bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+}
+
+.box-2 .icon-1 {
+    padding-bottom: 52px;
+}
+
+.box-2 .pt {
+    font-size: 30px;
+    position: absolute;
+    bottom: 30px;
+    right: 20px;
+}
+
+.box-3 {
+    margin-top: 160px;
+    border-radius: 15px;
+    position: relative;
+    width: 230px;
+    height: 140px;
+    background-color: rgb(207, 78, 18);
+    position: absolute;
+    bottom: 100;
+    left: 40px;
+}
+
+.box-3 .icon-section {
+    position: relative;
+    padding: 10px;
+}
+
+.box-3>.icon-section>.icon-1 {
+    position: absolute;
+    left: 10px;
+    top: 0;
+    font-size: 24px;
+    width: 50px;
+}
+
+.box-3 .icon-section .icon-2 {
+    position: absolute;
+    top: 4px;
+    right: 10px;
+    font-size: 10px;
+    font-size: 40px;
+}
+
+.box-3 .title {
+    padding-top: 20px;
+    padding-left: 10px;
+}
+
+.box-3 .sub-title {
+    font-size: 14px;
+    color: rgb(193, 198, 204);
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.section-1 {
+    padding: 20px 0;
+    border-radius: 100px 10px;
+}
+
+.section-1 .for-item {
+    padding-top: 40px;
+    display: flex;
+}
+
+.section-1 .for-item .item {
+    text-align: center;
+}
+
+.section-1 .for-item .item {
+    margin: 0 auto;
+}
+
+.section-1 .for-item .item .title {
+    font-size: 24px;
+    padding-top: 10px;
+    font-weight: bold;
+    color: rgb(18, 49, 38);
+}
+
+.section-1 .for-item .item .sub-title {
+    font-size: 18px;
+    padding-top: 10px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+.section-1>.for-item>.item>.icon-1 {
+    color: aliceblue;
+    padding: 8px 8px;
+    background-color: rgb(149, 82, 211);
+    border-radius: 20px;
+}
+
+.section-1>.for-item>.item>.icon-2 {
+    color: aliceblue;
+    padding: 8px 8px;
+    background-color: rgb(137, 204, 157);
+    border-radius: 20px;
+}
+
+.section-1>.for-item>.item>.icon-3 {
+    color: aliceblue;
+    padding: 8px 8px;
+    background-color: rgb(160, 47, 66);
+    border-radius: 20px;
+}
+
+.section-1>.for-item>.item>.icon-4 {
+    color: aliceblue;
+    padding: 8px 8px;
+    background-color: rgb(223, 174, 70);
+    border-radius: 20px;
+}
+
+.section-1 .title-our {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold
+}
+
+.section-2 {
+    height: 500px;
+}
+
+.section-2 .title {
+    text-align: center;
+}
+
+.section-2 .ticked {
+    margin-top: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-radius: 20px;
+    display: flex;
+    padding-left: 15%;
+    background-color: rgb(170, 184, 197);
+    box-shadow: 0px 0px 5px rgb(167, 115, 115);
+}
+
+.section-2 .ticked .item-ticked ul {
+    padding-top: 12px;
+    list-style: none;
+}
+
+.section-2 .ticked .item-ticked ul li {
+    padding: 4px 0;
+}
+
+.section-2 .ticked .item-ticked ul li i {
+    color: rgb(52, 102, 2)
+}
+
+.section-2 .ticked .buy-now {
+    padding-top: 10px;
+}
+
+.section-2 .ticked .buy-now input {
+    transition: all 0.3s linear;
+    padding: 10px 28px;
+    background-color: rgb(49, 44, 44);
+    color: aliceblue;
+    border-radius: 3px;
+}
+
+.section-2 .ticked .buy-now input:hover {
+    background-color: #3f87a6;
+}
+
+.section-2 .ticked .price p {
+    margin-top: 18px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.section-2 .ticked .item-ticked .ul li i {
+    background-color: aqua;
+}
+
+.section-2 .ticked .ticked-1 {
+    width: 33%;
+}
+
+.section-2 .ticked .ticked-2 {
+    width: 33%;
+}
+
+.section-2 .ticked .ticked-3 {
+    width: 33%;
+}
+
+.section-3 {
+    height: 300px;
+    text-align: center;
+}
+
+.section-3 .sub-title {
+    margin-top: 18px;
+}
+
+.section-3 .contact-form {
+    padding-top: 18px;
+}
+
+.section-3 .contact-form input {
+    padding: 10px 0;
+    padding-right: 30px;
+    padding-left: 10px;
+    outline: none;
+}
+
+.section-3 .contact-form a input {
+    padding: 10px 40px;
+    outline: none;
+    font-weight: bold;
+    transition: all 0.3s linear;
+}
+
+.section-3 .contact-form a input:hover {
+    background-color: #0f8f44;
+}
+
+.section-3 .contact-form input:active {
+    transform: scale(0.95);
+}
+
+.footer {
+    height: 280px;
+    background-color: rgb(117, 160, 160);
+    display: flex;
+    border: 10px 10px 10px;
+}
+
+.footer ul li {
+    list-style: none;
+    padding: 4px 0;
+}
+
+.footer ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255, 0.8);
+}
+
+.footer ul li a:hover {
+    color: rgb(99, 47, 47);
+}
+
+.footer .column-1,
+.footer .column-2,
+.footer .column-3,
+.footer .column-4,
+.footer .column-5 {
+    width: 15%;
+    padding-top: 40px;
+    padding-left: 120px;
+}
+
+.footer .title {
+    color: rgb(65, 60, 55);
+    padding-bottom: 10px;
+}
+
+.footer .app {
+    padding-left: 40px;
+    padding-top: 40px;
+}
+
+.footer .app .title-app {
+    font-weight: bold;
+}
+
+.footer .app img {
+    padding-top: 20px;
+    width: 140px;
+}

@@ -1,0 +1,368 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    border: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500&family=Roboto:wght@400;500;700;900&display=swap');
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+body {
+    background-size: 100%;
+    background-color: #F8F6F5;
+}
+
+
+/* HEADER CSS */
+
+.header {
+    height: 120px;
+    display: flex;
+    position: relative;
+}
+
+.nav {
+    height: 700px;
+}
+
+.section-1 {
+    height: 300px;
+    margin-top: 40px;
+    margin-bottom: 80px;
+}
+
+.header .logo-header {
+    width: 25%;
+}
+
+.header .menu-header {
+    width: 55%;
+}
+
+.header .menu-header ul {
+    list-style: none;
+    display: flex;
+    transition: all 0.3 ease-in;
+}
+
+.header .menu-header ul a {
+    padding: 0 12px;
+    text-decoration: none;
+    line-height: 100px;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(65, 5, 60);
+    transition: 0.7s;
+}
+
+.header .menu-header ul a:hover {
+    border-bottom: 5px solid rgb(161, 127, 127);
+    font-size: 25px;
+    color: rgb(180, 13, 97);
+    transition: 0.7s;
+}
+
+.logo-header img {
+    margin-top: 20px;
+    width: 100px;
+    left: 0;
+    border-radius: 20px;
+}
+
+.header .sign-up {
+    width: 20%;
+}
+
+.header .sign-up input:hover {
+    transition: 0.8s;
+    background-color: wheat;
+    color: rgb(73, 7, 27);
+}
+
+.sign-up input {
+    padding: 12px 16px;
+    right: 100px;
+    bottom: 30%;
+    color: aliceblue;
+    background-color: rgb(36, 28, 28);
+    border-radius: 10px;
+    font-weight: bold;
+    position: absolute;
+}
+
+
+/* END HEADER    */
+
+.header-product .title-product {
+    padding-top: 14px;
+    color: rgb(4, 53, 4);
+}
+
+.header-product .button-buy button {
+    padding: 12px;
+    border-radius: 18px;
+    background-color: #F8F6F5;
+    background-color: rgb(4, 53, 4);
+    transition: all 0.3s linear;
+}
+
+.header-product .button-buy button:hover {
+    background-color: #a6b2c5;
+    box-shadow: 0 0 0 5px #3b83f65f;
+    color: #1b0505;
+}
+
+.show-cart {
+    display: flex;
+    margin: 0;
+}
+
+.left-cart {
+    width: 60%;
+}
+
+.top-left-cart {
+    background-color: #FFFFFF;
+    padding: 20px 10px;
+}
+
+.row {
+    display: flex;
+    width: 100%;
+    margin: 20px;
+}
+
+.zip {
+    display: flex;
+}
+
+.title {
+    font-weight: 600;
+}
+
+.input-form input {
+    padding: 10px 20px;
+    background-color: #FFFFFF;
+    width: 300px;
+    border-radius: 4px;
+    border: 1px solid gray;
+    outline: none;
+}
+
+.row .name,
+.row .number,
+.row .email,
+.row .city,
+.row .state,
+.row .zip,
+.row .address {
+    padding: 0 20px;
+}
+
+.zip-child input {
+    width: 90%;
+}
+
+.state-child input {
+    width: 90%;
+}
+
+.row .address input {
+    width: 600px;
+}
+
+.center-left {
+    background-color: #FFFFFF;
+    padding: 10px 10px;
+}
+
+.center-left .date {
+    width: 600px;
+    margin-left: 20px;
+}
+
+.center-left .note {
+    width: 600px;
+    margin-left: 20px;
+}
+
+.center-left .date input {
+    width: 600px;
+}
+
+.center-left .note input {
+    width: 600px;
+}
+
+.bottom-left {
+    background-color: #FFFFFF;
+    padding: 20px 10px;
+    display: flex;
+    text-align: center
+}
+
+.bottom-left .input-type {
+    padding: 0 40px;
+}
+
+.right-cart {
+    width: 40%;
+    margin-left: 40px;
+    height: 717px;
+}
+
+.right-cart td {
+    padding: 0 10px;
+}
+
+.top-order {
+    height: 80%;
+}
+
+.sub-right {
+    background-color: #FFFFFF;
+    padding: 10px;
+}
+
+.sub-right .sub-total {
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sub-right .ship {
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sub-right .total {
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sub-right .order button {}
+
+.product-cart {
+    height: 80%;
+    padding: 20px;
+    background-color: #FFFFFF;
+    max-height: 560px;
+}
+
+.product-cart tr {
+    margin: 10px 0;
+}
+
+.sub-right .order button {
+    width: 100%;
+    padding: 1.1em 2em;
+    background: none;
+    border: 2px solid #fff;
+    font-size: 15px;
+    color: #131313;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s;
+    border-radius: 12px;
+    background-color: #ecd448;
+    font-weight: bolder;
+}
+
+.sub-right .order button:before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 120%;
+    background-color: #19a00c;
+    top: 50%;
+    transform: skewX(30deg) translate(-150%, -50%);
+    transition: all 0.5s;
+}
+
+.sub-right .order button:hover {
+    background-color: #4cc9f0;
+    color: #fff;
+}
+
+.sub-right .order button:hover::before {
+    transform: skewX(30deg) translate(150%, -50%);
+    transition-delay: 0.1s;
+}
+
+.sub-right .order button:active {
+    transform: scale(0.9);
+}
+
+.quantity-1 {
+    display: flex;
+    padding: 5px 12px;
+    background-color: #bdb7c5;
+    border-radius: 20px;
+    cursor: pointer;
+    color: rgb(30, 53, 7);
+    font-weight: bold;
+    font-size: 20px;
+    height: 30px;
+}
+
+.quantity-1 .quan {
+    padding: 0 4px;
+    cursor: pointer;
+}
+
+.item-product {
+    float: right;
+    margin-right: 60px;
+    margin-left: 10px;
+}
+
+.item-product .nameproduct {
+    font-weight: bold;
+    margin-bottom: 100px;
+}
+
+.item-product .priceproduct {
+    font-weight: bold;
+}
+
+.item-product .sub-product {}
+
+.product-list {
+    display: flex;
+    margin: 5px 0;
+}
+
+.item {
+    text-align: center;
+}
+
+.remove-product button {
+    font-weight: 600;
+    font-size: 20px;
+    background-color: #FFFFFF;
+    padding: 4px 0;
+    cursor: pointer;
+}
+
+.product-cart::-webkit-scrollbar {
+    width: 2px;
+    background-color: #F5F5F5;
+}
+
+.product-cart::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #555;
+}
+
+.notify {
+    border: 1.2px solid red;
+    background-color: rgb(158, 121, 121);
+}
