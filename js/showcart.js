@@ -140,3 +140,19 @@ function clearCart() {
     localStorage.clear();
     alert("Đã xóa toàn bộ dữ liệu trong giỏ hàng!");
 }
+// lấy thông tin vị trí của người dùng
+
+if (navigator.geolocation) {
+    // Nếu trình duyệt hỗ trợ Geolocation, yêu cầu thông tin vị trí của người dùng
+    navigator.geolocation.getCurrentPosition(function(position) {
+        // Lấy thông tin vị trí của người dùng
+        var latitude = position.coords.latitude;
+        var longitude = position.coords.longitude;
+
+        // Hiển thị thông tin vị trí trên trang web
+        alert("Vĩ độ: " + latitude + ", Kinh độ: " + longitude)
+    });
+} else {
+    // Nếu trình duyệt không hỗ trợ Geolocation, hiển thị thông báo lỗi
+   alert("Trình duyệt của bạn không hỗ trợ Geolocation");
+}
